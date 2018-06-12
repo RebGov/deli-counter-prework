@@ -8,6 +8,7 @@ def line(katz_deli_line)
     if katz_deli_line.length != 0
       index = 1
       katz_deli_line_current=katz_deli_line.each_with_index { |index, name| "#{index}. #{name} " }
+      index+=1
       puts "The line is currently: #{katz_deli_line_current.to_s} "
   end
 end
