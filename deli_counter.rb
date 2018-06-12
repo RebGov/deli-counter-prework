@@ -1,16 +1,15 @@
 katz_deli = []
 
 def line(katz_deli_line)
-  # if katz_deli_line.length == 0 
-   #  puts "The line is currently empty."
-    #part 1 if empty says (puts): "The line is currenly empty."
-    #part 2 if people are in line says(puts): "The line is currently: 1. name1 2. name2 3. name3 " etc
-    if katz_deli_line.length != 0
-      index = 1
-      katz_deli_line_current=katz_deli_line.each_with_index { |index, name| "#{index}. #{name} " }
-      index+=1
-      puts "The line is currently: #{katz_deli_line_current} "
-  end
+    if katz_deli_line.count > 1
+      output = "The line is currenty:"
+      katz_deli_line.each_with_index do |name, index|
+        output << " #{index + 1}. #{name}" 
+     end
+     puts output
+   else
+     puts "The line is currently empty."
+   end
 end
 
 def take_a_number(katz_deli_line, new_customer)
