@@ -7,8 +7,7 @@ def line(katz_deli_line)
     #part 2 if people are in line says(puts): "The line is currently: 1. name1 2. name2 3. name3 " etc
     if katz_deli_line.length != 0
       index = 1
-      katz_deli_line_current=katz_deli_line.each_with_index { |index, name| "#{index}. #{name} " }
-      index += 1
+      katz_deli_line_current=katz_deli_line.each_with_index { |index, name| "#{index + 1}. #{name} " }
       puts "The line is currently: #{katz_deli_line_current.to_s} "
   end
 end
