@@ -12,7 +12,6 @@ def line(katz_deli_line)
       puts "The line is currently: " + katz_deli_line_current
   end
 end
-end
 
 def take_a_number(katz_deli_line, new_customer)
  katz_deli_line.push(new_customer) # add a new person to the line
