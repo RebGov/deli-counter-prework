@@ -24,5 +24,5 @@ def take_a_number(katz_deli_line, new_customer)
   # states(puts): "Currently serving name"
   #part 2 
   #if no one in line states(puts): "There is nobody waiting to be served!"
-end
+# end
 
