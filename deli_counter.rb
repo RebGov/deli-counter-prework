@@ -16,11 +16,9 @@ def take_a_number(katz_deli_line, new_customer)
 
 def now_serving(katz_deli_line)
     if katz_deli_line.count > 1
-      output = "Currently serving"
-      katz_deli_line.shift { |name| output += " #{name[1]}"}
-       puts output
+       puts "Currently serving " + katz_deli_line.shfit() + "."
   else
     puts "There is nobody waiting to be served!"
 end
 end
-end
+
