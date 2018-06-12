@@ -16,7 +16,7 @@ def take_a_number(katz_deli_line, new_customer)
 
 def now_serving(katz_deli_line)
     if katz_deli_line.count > 0
-      katz_deli_line.shift { |name| puts "Currently serving #{name}." }
+       puts "Currently serving #{katz_deli_line[i].shift" }
   else
     puts "There is nobody waiting to be served!"
 end
