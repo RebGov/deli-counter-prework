@@ -3,8 +3,7 @@ katz_deli = []
 def line(katz_deli_line)
     if katz_deli_line.count > 1
       output = "The line is currenty:"
-      katz_deli_line.each_with_index do |name, index|
-        output << " #{index + 1}. #{name}" 
+      katz_deli_line.each_with_index { |name, index| output << " #{index + 1}. #{name}" }
      end
      puts output
    else
