@@ -15,7 +15,7 @@ def take_a_number(katz_deli_line, new_customer)
  end
 
 def now_serving(katz_deli_line)
-    if katz_deli_line.count > 0
+    if katz_deli_line.count > 1
       output = "Currently serving"
       katz_deli_line.shift { |name| output += " #{name[1]}"}
        puts output
