@@ -23,4 +23,4 @@ def now_serving(katz_deli_line)
   if katz_deli_line.count > 0
     katz_deli_line.unshift { |name| puts "Currently serving #{name}." }
  end
-
+end
