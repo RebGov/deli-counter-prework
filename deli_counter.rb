@@ -24,3 +24,4 @@ def now_serving(katz_deli_line)
     katz_deli_line.unshift { |name| puts "Currently serving #{name}." }
  end
 end
+end
