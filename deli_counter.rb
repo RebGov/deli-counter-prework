@@ -22,7 +22,7 @@ def now_serving(katz_deli_line)
   #if no one in line states(puts): "There is nobody waiting to be served!"
   if katz_deli_line.count > 0
     output "Currently serving"
-    katz_deli_line.unshift { |name| output " #{name}." }
+    katz_deli_line.shift { |name| output " #{name}." }
    puts output
   else
     puts "There is nobody waiting to be served!"
