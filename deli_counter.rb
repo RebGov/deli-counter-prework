@@ -15,15 +15,8 @@ def take_a_number(katz_deli_line, new_customer)
  end
 
 def now_serving(katz_deli_line)
-  #part 1
-  #takes a person being served off the line
-  # states(puts): "Currently serving name"
-  #part 2 
-  #if no one in line states(puts): "There is nobody waiting to be served!"
-  if katz_deli_line.count > 0
-    output "Currently serving"
-    katz_deli_line.shift { |name| output+= " #{name}." }
-   puts output
+    if katz_deli_line.count > 0
+      katz_deli_line.shift { |name| puts "Currently serving #{name}." }
   else
     puts "There is nobody waiting to be served!"
 end
