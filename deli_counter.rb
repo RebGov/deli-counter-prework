@@ -19,7 +19,7 @@ def take_a_number(katz_deli_line, new_customer)
  puts "Welcome, #{new_customer}. You are number #{katz_deli_line.length} in line." #greet and place
  end
 
-def now_serving(katz_deli_line)
+#def now_serving(katz_deli_line)
   #part 1
   #takes a person being served off the line
   # states(puts): "Currently serving name"
