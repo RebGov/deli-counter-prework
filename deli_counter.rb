@@ -9,7 +9,7 @@ def line(katz_deli_line)
       index = 1
       katz_deli_line_current=katz_deli_line.each_with_index { |name, index| "#{index}. #{name} " }
       index += 1
-      puts "The line is currently: " + katz_deli_line_current
+      puts "The line is currently: #{katz_deli_line_current"
   end
 end
 
